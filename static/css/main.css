@@ -1,0 +1,59 @@
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.node {
+  font: 10px sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+
+.ui-slider {
+    margin-bottom:0px;
+    margin-top: 12px;
+    position: relative;
+}
+
+.container-fluid{
+    background: #34495E;
+    padding:0;
+}
+
+label{
+    color:#d6dbe0;
+}
+h3{
+    color:#d6dbe0;
+    margin-left:10px;
+}
+
+body{
+    color:#d6dbe0;
+}
+
+#filters{
+    display:none;
+}
+
+.internal{
+    margin-left:10px;
+    margin-bottom:10px;
+}
+
+.switcher{
+    padding:3px 3px 3px 10px;
+    background:#2980B9;
+    text-align:center;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.switcher:hover{
+    background:#3498DB;
+}

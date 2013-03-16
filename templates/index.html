@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Words in a String</title>
+    <meta name="author" content="Yousuf Fauzan">
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="/static/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="/static/css/flat-ui.css" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css"/>
+    
+    <link rel="shortcut icon" href="/static/images/favicon.ico?v=1">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="/static/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="container-fluid">
+        <div id="get-words">
+            <h3>Get Words</h3>
+            <div class="internal">
+                <div class="row">
+                    <div class="span4">
+                        <input id="letters" type="text" value="" placeholder="Letters" class="span4" />
+                    </div>
+                    <div class="span4">
+                        <a href="#" class="btn btn-large btn-primary" onclick="new_canvas();return false;">Go</a>
+                    </div>
+                </div>
+            </div>
+            <div class="switcher" onclick="show_filter()">
+                Apply Filter
+            </div>
+        </div>
+        <div id="filters">
+            <div class="switcher" onclick="show_word()">
+                Get Words
+            </div>
+            <h3>Apply Filter</h3>
+            <div class="internal">
+                <div class="row">
+                    <div class="span4">
+                        <input id="prefix" type="text" value="" placeholder="Prefix" class="span4" />
+                    </div>
+                    <div class="span4">
+                        <div id="slider" class="ui-slider">
+                            <div class="ui-slider-segment"></div>
+                            <div class="ui-slider-segment"></div>
+                            <div class="ui-slider-segment"></div>
+                        </div>
+                        <label id="slider-val">Minimum Length: 1</label>
+                    </div>
+                    <div class="span3">
+                        <a href="#" class="btn btn-large btn-primary" onclick="filter();return false;">Filter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div id="canvas">
+    </div>
+    <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="/static/js/jquery-1.8.2.min.js"></script>
+    <script src="/static/js/jquery-ui-1.10.0.custom.min.js"></script>
+    <script type="text/javascript" src="/static/js/main.js"></script>
+</body>
+</html>
